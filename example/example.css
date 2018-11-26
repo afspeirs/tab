@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+
+.tab-buttons {
+	display: flex;
+	flex-direction: row;
+}
+.tab-buttons div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+	background: darkgrey;
+	cursor: pointer;
+}
+.tab-buttons div.active {
+	border: 2px solid red;
+}
+
+.tab-content {
+	display: none;
+}
+.tab-content.active {
+	display: block;
+}
