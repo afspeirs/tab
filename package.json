@@ -4,11 +4,25 @@
 	"description": "A simple tab module",
 	"license": "MIT",
 	"repository": "afspeirs/tab",
-	"main": "index.js",
+	"main": "lib/index.js",
 	"keywords": [
 		"npm",
 		"package",
 		"afspeirs",
 		"tab"
-	]
+	],
+	"scripts": {
+		"build": "babel src --out-dir lib",
+		"version": "npm run build"
+	},
+	"babel": {
+		"presets": [
+			"es2015"
+		]
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-preset-es2015": "^6.24.1"
+	}
 }
