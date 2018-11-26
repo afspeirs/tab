@@ -1,5 +1,5 @@
 const Tab = {
-	tabButtons: [...document.querySelectorAll('div[data-tab]')],
+	tabButtons: [...document.querySelectorAll('[data-tab]')],
 	tabContent: [...document.querySelectorAll('.tab-content')],
 
 	init() {

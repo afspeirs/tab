@@ -19,7 +19,7 @@ Object.defineProperty(exports, "__esModule", {
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 var Tab = {
-	tabButtons: [].concat(_toConsumableArray(document.querySelectorAll('div[data-tab]'))),
+	tabButtons: [].concat(_toConsumableArray(document.querySelectorAll('[data-tab]'))),
 	tabContent: [].concat(_toConsumableArray(document.querySelectorAll('.tab-content'))),
 
 	init: function init() {
