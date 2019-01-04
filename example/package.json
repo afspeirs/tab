@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "example.js",
   "scripts": {
-    "build": "browserify example.js -o dist/bundle.js",
-    "watch": "watchify example.js -o dist/bundle.js -v"
+    "build": "browserify example.js -o build/bundle.js",
+    "watch": "watchify example.js -o build/bundle.js -v"
   },
   "browserify": {
     "transform": [
