@@ -12,20 +12,18 @@ npm i @afspeirs/tab
 
 ## Markup
 
-Use divs with a data-tab attribute to set the tab to active.
+Create an element with a class of tab-buttons with divs with a data-tab attribute, to set the tab to active, within it.
 
+Create an element with a class of tab-content with an id that matches an existing data-tab value
 
-```html
-<div class="tab-buttons">
-  <div data-tab="tab-1" class="active">Tab 1</div>
-  <div data-tab="tab-2">Tab 2</div>
-</div>
-```
-
-Create an element which has a class of tab-content with an id that matches an existing data-tab value
+Wrap the buttons and content in a div with a class of tab-container. This allows for multiple tabs on a single page
 
 ```html
 <div class="tab-container">
+  <div class="tab-buttons">
+    <div data-tab="tab-1" class="active">Tab 1</div>
+    <div data-tab="tab-2">Tab 2</div>
+  </div>
   <div class="tab-content active" id="tab-1">
     Tab 1 content
   </div>
